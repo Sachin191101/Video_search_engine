@@ -9,9 +9,7 @@ const { default: axios } = require("axios");
 const app = express();
 
 // middlewares
-app.use(cors({
-    origin: 'http://localhost:3000',
-}));
+app.use(cors());
 
 app.use(express.json());  
 
